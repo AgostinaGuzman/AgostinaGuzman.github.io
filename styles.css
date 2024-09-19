@@ -1,0 +1,167 @@
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0; /* Fondo gris claro */
+    color: #424242; /* Texto gris oscuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f8f8f8; /* Fondo claro */
+    color: #483D8B; /* Color de texto gris suave */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.title-container {
+    background-color: #70baff; /* Fondo claro */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+}
+
+h1.glitch {
+    font-size: 3.5rem;
+    color: #837f7f; /* Gris suave */
+    text-shadow: 0 0 5px rgba(131, 127, 127, 0.5); /* Sombra leve */
+    position: relative;
+}
+
+.grid-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+.color-box {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* Fondo blanco */
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-10px);
+}
+
+.color-box.pink, 
+.color-box.skyblue, 
+.color-box.neon-green, 
+.color-box.pearl {
+    background-color: #f8f8f8; /* Fondo claro */
+    color: #424242; /* Texto gris oscuro */
+}
+
+a {
+    text-decoration: none;
+    color: #3b78e7; /* Azul para enlaces */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gray-background {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-outline-danger {
+    background-color: transparent;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.pull-right {
+    float: right;
+}
+
+footer {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para el footer */
+    padding: 1rem;
+    border-top: 1px solid #ddd; /* Línea superior para separación */
+    margin-top: auto; /* Asegura que el footer esté en la parte inferior cuando el contenido es corto */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 100px; /* Ajusta el tamaño del footer */
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+}
